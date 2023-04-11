@@ -335,7 +335,8 @@ a {
     }
     #futbolMid #middle_Futbol #bolMas_1 #bol_1 {
         position: relative;
-        top: -5px;
+        top: 10px;
+        left: -20px;
     }
     #slideBar {
         display: none;
