@@ -173,9 +173,6 @@ li {
 }
 
 /* ----- Drop Down Menu -----*/
-
-
-
 #dropMenu {
     width: 100%;
     height: 0;
@@ -214,7 +211,9 @@ li {
  a:hover {
     color: yellow;
     font-size: 1em;;
+    width: 500px;
     text-shadow: 3px 3px rgba(0, 0, 0, 0.2);
+    background:rgba(243, 239, 239, 0.1);
 } 
 
 /* ----- Slide Bar -----*/
@@ -359,7 +358,7 @@ a {
     }
     #dropMenu {
         display: block;
-        height: 60%;
+        height: 65%;
         visibility: visible;
         transition: height 1s;
     } 
