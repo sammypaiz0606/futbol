@@ -126,7 +126,6 @@
     border-radius: 25px;
     position: relative;
     top:0px;
-    /* display: none; */
     animation:ballSlide1 3s infinite;
     overflow: hidden;
     
@@ -149,8 +148,48 @@
     from {left: 0;}
     to {left: 252px;}
 }
+/* ----- Drop Down Menu -----*/
+#dropMenu {
+    width: 100%;
+    height: 60%;
+    background:rgb(1, 1, 200);
+    position: absolute;
+    top:70px;
+    display: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    visibility: visible;
+    overflow: hidden;
 
-/* ----- Slide Bar ----*/
+
+}
+#dropDownMenu {
+    position: relative;
+    top: 25px;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+#dropMenu #dropDownMenu #dropList li {
+    font-size: 2em;
+    margin-bottom: 10px;
+    list-style: none;
+    text-align: left;
+    margin-bottom: 25px;
+}
+#x_icon {
+    font-size: 2em;
+    position: relative;
+    right:15px;
+
+    /* margin-right: 15px; */
+}
+ a:hover {
+    color: yellow;
+    font-weight: bold;
+}
+
+/* ----- Slide Bar -----*/
 #slideBar {
     height: 620px;
     position: absolute;
@@ -192,12 +231,6 @@
     position: relative;
     top:20px;
 }
-/* #bolMas_2 h1 {
-    font-size: 2.2em;
-    color: #ddd;
-    
-} */
-
 #futbolSlide #bolMas_2 #bol_2 {
     position: absolute;
     top:20px;
@@ -255,13 +288,20 @@ a {
     #title h1 {
         font-size: 3em;
     }
-    #futbolMid #slideTitle #fut {
+    #futbolMid #midTitle #fut {
         font-size: 2.5em;
     }
-    #futbolMid #middle_Futbol h1 {
+    #futbolMid #middle_Futbol #bolMas_1 h1 {
         font-size: 1.1em;
         position: relative;
-        top: 0px;
+        top: -20px;
+    }
+    #futbolMid #middle_Futbol #bolMas_1 #bol_1 {
+        position: relative;
+        top: -5px;
+    }
+    #slideBar {
+        display: none;
     }
     #leftLine,
     #rightLine {
@@ -273,7 +313,11 @@ a {
     #radio {
         position:relative;
         top:-5px;
-        
-        
+      
+    }
+    #dropMenu {
+        display: block;
+        transition: height 1s;
+
     }
 }

@@ -1,10 +1,13 @@
 
 let toggleNav = false;
+let toggleNav_2 = false;
 
 let slide = document.querySelector('.mainSlide');
 
 let slideBar = document.getElementById('slideBar');
-let list = document.getElementById('list');
+let x_icon = document.getElementById('x_icon');
+
+let dropMenu = document.getElementById('dropMenu');
 
 slide.addEventListener('click', ()=> {
 
@@ -22,5 +25,17 @@ slide.addEventListener('click', ()=> {
 
         toggleNav = false;
 
+    }
+});
+
+x_icon.addEventListener('click', ()=> {
+    if(toggleNav_2 === false) {
+        dropMenu.style.display = 'none';
+        dropMenu.style.visibility = 'hidden';
+        toggleNav_2 = true;
+    } else {
+        dropMenu.style.visiblity = 'visible';
+
+        toggleNav_2 = false;
     }
 });
