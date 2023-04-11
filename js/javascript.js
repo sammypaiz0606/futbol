@@ -3,6 +3,7 @@ let toggleNav = false;
 let toggleNav_2 = false;
 
 let slide = document.querySelector('.mainSlide');
+let bars_2 = document.getElementById('bars_2');
 
 let slideBar = document.getElementById('slideBar');
 let x_icon = document.getElementById('x_icon');
@@ -29,13 +30,14 @@ slide.addEventListener('click', ()=> {
 });
 
 x_icon.addEventListener('click', ()=> {
-    if(toggleNav_2 === false) {
-        dropMenu.style.display = 'none';
-        dropMenu.style.visibility = 'hidden';
-        toggleNav_2 = true;
-    } else {
-        dropMenu.style.visiblity = 'visible';
+    dropMenu.style.height = '0px';
+    bars_2.style.width = '52px';
+    // bars_2.style.visibility = 'visible';
+    bars_2.style.display = 'block';
+});
 
-        toggleNav_2 = false;
-    }
+bars_2.addEventListener('click', ()=> {
+    dropMenu.style.height = '60%';
+    // bars_2.style.visibility = 'hidden';
+    bars_2.style.display = 'none';
 });
