@@ -31,7 +31,6 @@ slide.addEventListener('click', ()=> {
 
 x_icon.addEventListener('click', ()=> {
     dropMenu.style.height = '0px';
-    bars_2.style.width = '52px';
     // bars_2.style.visibility = 'visible';
     bars_2.style.display = 'block';
 });

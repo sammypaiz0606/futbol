@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
+h1,
+p,
+li {
+    font-family: "Poppins", sans-serif;
+}
 * {
     padding: 0;
     margin: 0;
@@ -22,10 +27,10 @@
 #title h1 {
     font-size: 4em;
     font-weight: bold;
-    font-family: monospace;
+    /* font-family: "Poppins", sans-serif; */
     color: #fff;
     position: relative;
-    top:-20px;
+    top:-35px;
 }
 #top {
     display: flex;
@@ -49,13 +54,13 @@
    border-radius: 5px;
    list-style: none;
 }
-#bars_1 li{
+#bars_1 {
     transition: width 1s;
 }
 #bars_2 {
     display: none;
     /* visibility: hidden; */
-    transition: width 1s;
+    /* transition: width 1s; */
 }
 
 /* ----  Body  ---- */
@@ -117,13 +122,18 @@
     height:2px;
     background: #cac8c8;
     position: relative;
-    top:10px;
+    top:-45px;
     margin: 0 5px;
     list-style: none;
     overflow: hidden;
 }
-#ball1,
-#ball2 {
+#radio div p {
+    font-size: 3em;
+    position: relative;
+    top:-80px;
+}
+#line_1,
+#line_2 {
     width: 115px;
     height: 112px;
     background: #000;
@@ -135,8 +145,8 @@
     
 }
 
-.radio_1 #ball1,
-.radio_1 #ball2 {
+.radio_1 #line_1,
+.radio_1 #line_2 {
     width: 15px;
     height: 2px;
     background: #fff;
@@ -176,7 +186,7 @@
     margin-bottom: 10px;
     list-style: none;
     text-align: left;
-    margin-bottom: 25px;    
+    margin-bottom: 15px;    
 }
 #x_icon {
     font-size: 2em;
@@ -245,17 +255,20 @@
 #radio_2 {
     position:relative;
     color: #ddd;
-    top:-215px;
+    top:0px;
     display: flex;
     justify-content: center;
 }
-#radio_2 .line {
+#radio_2 .line p{
     position: relative;
     top:8px;
     margin: 0 5px;
     width: 55px;
     height: 2px;
-    background: rgb(105, 18, 18);
+    background: #ddd;
+}
+#radio_2 div p {
+    color: #fff;
 }
 #leftList {
     display: flex;
@@ -278,11 +291,11 @@
 }
 #link {
     position:relative;
-    top: 23px;
+    top: 20px;
 }
 #link div p {
     text-align: left;
-    margin-bottom: 40px;
+    margin-bottom: 33px;
 }
 a {
     color: #ddd;
@@ -292,6 +305,8 @@ a {
 
 @media only screen and (max-width: 600px) {
     #title h1 {
+        position: relative;
+        top:-17px;
         font-size: 3em;
     }
     #futbolMid #midTitle #fut {
@@ -311,20 +326,20 @@ a {
     }
     #leftLine,
     #rightLine {
-    width: 112px;
+    width: 80px;
     }
     
     #radio {
         position:relative;
-        top:-5px;
+        top:25px;
       
     }
     #bars_1 {
         visibility: hidden;
     }
     #bars_2 {
+        /* visibility: visible; */
         display: none;
-        /* visibility: hidden; */
     }
     #dropMenu {
         display: block;
