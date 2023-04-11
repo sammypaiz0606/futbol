@@ -65,27 +65,39 @@
     font-size: 3em;
     border-radius: 5px;
 }
+#futbolMid #midTitle #fut {
+    font-size: 5em;
+    color: yellow;
+}
 #middle_Futbol {
     display: flex;
     flex-direction: column;
 }
-#futbolMid #slideTitle #fut {
-    font-size: 5em;
-    color: yellow;
-}
+
 #futbolMid #middle_Futbol h1 {
-    font-size: 2.2em;
-}
-#bol {
+    font-size: 2em;
     position: relative;
-    top:10px;
+    top:20px;
+}
+#bolMas_1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    top:20px;
     color:#ddd;
     
 }
-#mas {
+#futbolMid #bolMas_1 #bol_1 {
     position: relative;
-    bottom: 7px;
+    top:30px;
+}
+#futbolMid #bolMas_1 #mas_1 {
+    position: relative;
+    top:-20px;
     color: #ddd;
+    margin:0;
+    padding: 0;
 }
 #radio {
     position:relative;
@@ -97,7 +109,7 @@
 }
 #leftLine,
 #rightLine {
-    width: 252px;
+    width: 212px;
     height:2px;
     background: #cac8c8;
     position: relative;
@@ -145,17 +157,66 @@
     top:70px;
     left:0;
     z-index: 1;
-    background: rgb(1, 1, 200);
+}
+#futbolSlide {
+    display: flex;
+    justify-content: center;
 }
 #list {
     background: rgb(1, 1, 200);
-    width: 50%;
-    height:100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 0;
+    height:100%;
     position: absolute;
     visibility: hidden;
     overflow: hidden;
     transition: width 1s;
+}
+#slideTitle h1 {
+    font-size: 4em;
+    color: yellow;
+    position: relative;
+    top: 20px;
+}
+#bolMas_2 {
+    position: relative;
+    top: 28px;
+    color: #ddd;
+}
+#bol2 {
+    position: absolute;
+    top:0px;
+    
+}
+#mas2 {
+    position: relative;
+    top:20px;
+}
+/* #bolMas_2 h1 {
+    font-size: 2.2em;
+    color: #ddd;
+    
+} */
+
+#futbolSlide #bolMas_2 #bol_2 {
+    position: absolute;
+    top:20px;
+    padding: 0;
+}
+#radio_2 {
+    position:relative;
+    color: #ddd;
+    top:-215px;
+    display: flex;
+    justify-content: center;
+}
+#radio_2 .line {
+    position: relative;
+    top:8px;
+    margin: 0 5px;
+    width: 55px;
+    height: 2px;
+    background: rgb(105, 18, 18);
 }
 
 @media only screen and (max-width: 600px) {
@@ -166,13 +227,21 @@
         font-size: 2.5em;
     }
     #futbolMid #middle_Futbol h1 {
-        font-size: 1.2em;
+        font-size: 1.1em;
+        position: relative;
+        top: 0px;
     }
     #leftLine,
     #rightLine {
-    width: 132px;
+    width: 112px;
     }
     .mainSlide {
         display: none;
+    }
+    #radio {
+        position:relative;
+        top:-5px;
+        
+        
     }
 }
