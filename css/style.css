@@ -59,30 +59,39 @@ li {
 }
 #bars_2 {
     display: none;
-    /* visibility: hidden; */
-    /* transition: width 1s; */
 }
 
 /* ----  Body  ---- */
 #body {
+    display: flex;
+    justify-content: center;
     position:relative;
-    top:150px;
+    top:100px;
+
+}
+#body #midWrap {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width:700px;
+    height: 350px;
+    border-radius: 5px;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 #futbolMid {
     display: flex;
     justify-content: center;
     font-size: 3em;
-    border-radius: 5px;
+
+
 }
 #futbolMid #midTitle #fut {
     font-size: 5em;
     color: yellow;
 }
-#middle_Futbol {
-    display: flex;
-    flex-direction: column;
-}
 
+ 
 #futbolMid #middle_Futbol h1 {
     font-size: 2em;
     position: relative;
@@ -162,7 +171,11 @@ li {
     from {left: 0;}
     to {left: 252px;}
 }
+
 /* ----- Drop Down Menu -----*/
+
+
+
 #dropMenu {
     width: 100%;
     height: 0;
@@ -202,8 +215,7 @@ li {
     color: yellow;
     font-size: 1em;;
     text-shadow: 3px 3px rgba(0, 0, 0, 0.2);
-}
-
+} 
 
 /* ----- Slide Bar -----*/
 #slideBar {
@@ -309,6 +321,10 @@ a {
         top:-17px;
         font-size: 3em;
     }
+    #body #midWrap {
+        width:450px;
+        height: 300px;
+    }
     #futbolMid #midTitle #fut {
         font-size: 2.5em;
     }
@@ -338,7 +354,6 @@ a {
         visibility: hidden;
     }
     #bars_2 {
-        /* visibility: visible; */
         display: none;
     }
     #dropMenu {
@@ -346,6 +361,5 @@ a {
         height: 60%;
         visibility: visible;
         transition: height 1s;
-    }
-   
-}
+    } 
+} 
