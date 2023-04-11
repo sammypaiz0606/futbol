@@ -36,7 +36,7 @@ x_icon.addEventListener('click', ()=> {
 });
 
 bars_2.addEventListener('click', ()=> {
-    dropMenu.style.height = '60%';
+    dropMenu.style.height = '65%';
     // bars_2.style.visibility = 'hidden';
     bars_2.style.display = 'none';
 });
